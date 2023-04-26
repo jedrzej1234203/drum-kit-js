@@ -1,5 +1,4 @@
 const app = document.getElementById("drum-kit-app");
-//const buttonList = ["W", "S", "D", "F", "G", "H", "J", "K", "L"];
 const buttonList = [
   ["w", "CLAP"],
   ["d", "HIHAT"],
@@ -15,7 +14,9 @@ buttonList.forEach((element) => {
   let newButton = document.createElement("button");
   newButton.classList.add("panel");
   newButton.classList.add(element[0]);
-  newButton.onclick = clickToKey();
+  newButton.onclick = () => {
+    playDrum(element[0]);
+  };
   newButton.innerHTML = `<span>${element[0].toUpperCase()}</span><p>${
     element[1]
   }</p>`;
@@ -24,14 +25,12 @@ buttonList.forEach((element) => {
 
 window.addEventListener("keydown", playDrum);
 
-function clickToKey(btn) {
-  console.log(btn);
-}
-
 function playDrum(key) {
-  switch (key.key) {
+  if (key.length !== 1) {
+    key = key.key;
+  }
+  switch (key) {
     case "w":
-      console.log(key.key);
       let clap = new Audio("assets/clap.wav");
       clap.play();
       break;
