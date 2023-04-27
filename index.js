@@ -35,25 +35,32 @@ function playDrum(key) {
       clap.play();
       break;
     case "d":
-      console.log(key.key);
-      break;
+      let hiHat = new Audio("assets/HiHat.mp3");
+      hiHat.play();
+    break;
     case "f":
-      console.log(key.key);
+      let openHat = new Audio("assets/OpenHiHat.mp3");
+      openHat.play();
       break;
     case "g":
-      console.log(key.key);
-      break;
+      let boom = new Audio("assets/boom.wav");
+      boom.play();
+    break;
     case "h":
-      console.log(key.key);
-      break;
+      let ride = new Audio("assets/Ride.mp3");
+      ride.play();
+    break;
     case "j":
-      console.log(key.key);
-      break;
+      let snare = new Audio("assets/Snare.mp3");
+      snare.play();
+    break;
     case "k":
-      console.log(key.key);
-      break;
+      let tom = new Audio("assets/Tom.mp3");
+      tom.play();
+    break;
     case "l":
-      console.log(key.key);
-      break;
+      let tink = new Audio("assets/tink.wav");
+      tink.play();
+    break;
   }
 }
