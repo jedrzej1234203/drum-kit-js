@@ -101,6 +101,7 @@ function copyAndReset() {
   navigator.clipboard
     .writeText(trackerHistory.slice(20))
     .then(alert("History coppied to clipboard"));
+  tracker.innerHTML = "Tracker (click me!):<br/>";
   let panelBackground = document.querySelectorAll(".panel");
   panelBackground.forEach((panel) => {
     panel.style.background = "#424242";
