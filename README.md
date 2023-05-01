@@ -1,5 +1,7 @@
 # drum-kit-js
 
+[Repository Link](https://github.com/jedrzej1234203/drum-kit-js)
+
 - [About](#about)
 - [Features](#features)
 - [Technical Information](#technical_information)
@@ -10,10 +12,10 @@ This is drum kit project i made while learning JavaScript
 
 <a name="features"></a>
 ## Features
--Real drum sound on click
--Drum history tracker
--Copy History and Reset Button
--Responsible Web Design down to 375px
+1. Real drum sound on click
+2. Drum history tracker
+3. Copy History and Reset Button
+4. Responsible Web Design down to 375px
 
 <a name="technical_information"></a>
 ## Technical Information
